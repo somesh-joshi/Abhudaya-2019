@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      #Portfolio {
+      background-image: url(images/hero-bg.png)
+    }
+
+      #home{
+        height: 87.5%;
+      }
+      
+
+    </style>
+
+  </head>
+<body>
+
+<section class="main-section paddind" id="Portfolio">
+
+
+
+      <div class="header-logo">
+        <!-- <a id="IIITr" href="javascript:void(0)">InfiIIITy</a> -->
+        <img src="images/logo.png" style="height: 10%; width: 10%; margin-top: 15px; ">
+        <a id="inno" href="javascript:void(0)" onclick="function () "></a>
+      </div>
+
+      
+      <a id="header-menu-trigger" href="#0">
+        <span class="header-menu-text" style="color: white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;margin-top: -0.16em">Menu</span>
+        <span class="fa fa-bars" id="bars" style="font-size: 1.5em;color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"></span>
+      </a>
+
+      <nav id="menu-nav-wrap">
+        <a href="#0" class="close-button" title="close">
+          <span>Close</span>
+        </a>
+
+        <h3>ABHYUDAYAA 2020</h3>
+
+        <ul class="nav-list">
+          <li class="current">
+            <a style="text-decoration: none;color:white" href="./index.html" title="">Home</a>
+          </li>
+          
+          <li>
+            <a style="text-decoration: none;" href="./about.html" title="">About</a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="./event.html" title="">Events</a>
+          </li>
+
+          <li>
+            <a style="text-decoration: none;" href="./committees.html" title="">Committees</a>
+          </li>
+
+          <li class="ca">
+            <a style="text-decoration: none;" href="./sponsors.html" title="">Sponsors</a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="./contact.html">Contact Us</a>
+          </li>
+          <li>
+                        <a class="glow1" style="text-decoration: none;" href="./tshirt.html" title="">T-SHIRT</a>
+                    </li>
+
+        </ul>
+        <script>
+          $(document).ready(function () {
+            if (localStorage.token == "" || localStorage.token == null || !(localStorage.token)) {
+              $(".signed_out").css("display", "block");
+              $(".signout").css("display", "none");
+              $(".profile").css("display","none");
+              $(".ca").css("display", "block");
+            } else {
+              $(".signout").css("display", "block");
+              $(".signed_out").css("display", "none");
+              $(".profile").css("display","block");
+              $(".ca").css("display", "none");
+            }
+
+          });
+        </script>
+        <script>
+          $(document).on("click",".signout",function(){
+            localStorage.removeItem('token');
+            localStorage.removeItem('innoID');
+            location.href='./index.html';
+          });
+        </script>
+        
+
+      </nav>
+      
+
+    
+      
+    <!--main-section-start-->
+    <div class="container">
+      <center><h2 style="color: white">EVENTS</h2></center>
+      
+      <div class="portfolioFilter">
+        <ul class="Portfolio-nav wow fadeIn delay-02s">
+          <li><a href="#" data-filter="*" class="current">All</a></li>
+          <li><a href="#" data-filter=".Technical">Technical</a></li>
+          <li><a href="#" data-filter=".Non-Technical">Non-Technical</a></li>
+          <li><a href="#" data-filter=".spot">Spot</a></li>
+          <li><a href="#" data-filter=".cultural">3 More Nights Live</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="portfolioContainer wow fadeInUp delay-04s">
+      <div class="Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable1" data-toggle="modal" data-target="#exampleModalScrollable1"><img src="images/1.jpg" alt="" style="height: 50%; width: 50%;"></a>
+        <h4 style="color: white;">CATAPULT</h4>
+      </div>
+
+      <div class="Portfolio-box Technical">
+        <a href="#exampleModalScrollable2" data-toggle="modal" data-target="#exampleModalScrollable2"><img src="images/2.jpg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">SOCCER BOT</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable3" data-toggle="modal" data-target="#exampleModalScrollable3"><img src="images/13.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">CIRCUTRIX</h3>
+      </div>
+
+      <div class="Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable4" data-toggle="modal" data-target="#exampleModalScrollable4"><img src="images/3.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">MAHARAHASYA</h3>
+      </div>
+
+      <div class=" Portfolio-box Technical">
+        <a href="#exampleModalScrollable5" data-toggle="modal" data-target="#exampleModalScrollable5"><img src="images/COT.jpg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">CODE-A-THON</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-technical">
+        <a href="#exampleModalScrollable6" data-toggle="modal" data-target="#exampleModalScrollable6"><img src="images/4.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">MONOLOOP STRUGGLE</h3>
+      </div>
+
+      <div class=" Portfolio-box Technical">
+        <a href="#exampleModalScrollable7" data-toggle="modal" data-target="#exampleModalScrollable7"><img src="images/5.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">BOT MARATHON</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable8" data-toggle="modal" data-target="#exampleModalScrollable8"><img src="images/7.jpg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">ARTFEST</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable9" data-toggle="modal" data-target="#exampleModalScrollable9"><img src="images/10.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">NUKKAD NATAK</h3>
+      </div>
+
+      <div class=" Portfolio-box Technical">
+        <a href="#exampleModalScrollable10" data-toggle="modal" data-target="#exampleModalScrollable10"><img src="images/12.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">CODE HARD</h3>
+      </div>
+
+      <div class=" Portfolio-box Technical">
+        <a href="#exampleModalScrollable11" data-toggle="modal" data-target="#exampleModalScrollable11"><img src="images/14.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">EXPO</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-Technical">
+        <a href="#exampleModalScrollable12" data-toggle="modal" data-target="#exampleModalScrollable12"><img src="images/15.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">SPEAKER'S HUB</h3>
+      </div>
+
+      <div class=" Portfolio-box Non-technical">
+        <a href="#exampleModalScrollable13" data-toggle="modal" data-target="#exampleModalScrollable13"><img src="images/tef.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">TENDERFILLING</h3>
+      </div>
+
+      <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable14" data-toggle="modal" data-target="#exampleModalScrollable14"><img src="images/PUBG.jpeg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">PUBG</h3>
+      </div>
+
+      <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable15" data-toggle="modal" data-target="#exampleModalScrollable15"><img src="images/COD.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">CALL OF DUTY MOBILE</h3>
+      </div>
+
+      <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable16" data-toggle="modal" data-target="#exampleModalScrollable16"><img src="images/VR.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">VR ARCADE</h3>
+      </div>
+
+       <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable17" data-toggle="modal" data-target="#exampleModalScrollable17"><img src="images/min.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">MINUTE TO WIN IT</h3>
+      </div>
+
+       <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable18" data-toggle="modal" data-target="#exampleModalScrollable18"><img src="images/arc.jpg" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">ARCHERY</h3>
+      </div>
+
+       <div class=" Portfolio-box spot">
+        <a href="#exampleModalScrollable19" data-toggle="modal" data-target="#exampleModalScrollable19"><img src="images/nt.png" alt="" style="height: 50%; width: 50%;" ></a>
+        <h3 style="color: white;">NOOSE TROUBLE</h3>
+      </div>
+
+
+
+
+    </div>
+  </section>
+   
+  
+  
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/wow (2).js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/magnific-popup.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+
+
+      var $container = $('.portfolioContainer'),
+        $body = $('body'),
+        colW = 375,
+        columns = null;
+
+
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+
+      $(window).smartresize(function() {
+        // check if columns has changed
+        var currentColumns = Math.floor(($body.width() - 30) / colW);
+        if (currentColumns !== columns) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width(columns * colW)
+            .isotope('reLayout');
+        }
+
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function() {
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+
+          filter: selector,
+        });
+        return false;
+      });
+
+    });
+  </script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6><p class="font-weight-bold"></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">CATAPULT</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6><p class="font-weight-bold">CIRCUITRIX</p><p class="font-weight-bold">About the event-</p><p>A game of skill & strategy, where you will witness the excitement andthrill of real time fun!</p><p>Challenge yourself, jump off the deep end and face the circuitrix.
+Circuitrix is all about a setup of sensors and circuits.<br>One must use their ability to adapt and survive here. There will be a room setup with a track full of obstacles and sensors with an idol at the center of the room.<br>The participant needs to retrieve it safely without raising the alarms.</p><p class="font-weight-bold">Location -</p><p>Architecture Lawn</p><p class="font-weight-bold">Entry Fees-</p><p>100/- per pair</p><p class="font-weight-bold">Winning Prizes-</p>
+<p>Winner- 2000/-<br>Runner up - 1500/-</p><p class="font-weight-bold">For details -</p>
+<p>Mr.  Abhishek Lanjewar <br>9765264769<br>Mr.  Sanket Bomanwar <br>8766494107</p></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><P class="font-weight-bold">MAHARAHASYA</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+       <p class="font-weight-bold">MAHARAHASYA</p><p class="font-weight-bold">About the event-</p>Embark in search of the ultimatetreasure.<BR> Only the best team will prosper. Put on your thinking caps, solve the clues the fastest you can. Try your hand at Abhyudayaa's Maharahasya.<BR>Event will consist of 4 rounds-<BR>1. Riddle Solving<BR>2. Memorize the wor <BR>3. Scavenger Hunt<BR>4. Clue cracking<BR>Location - Gym Building<BR>Entry Fees - 100/- per  pair
+       <p class="font-weight-bold">Winning prizes - </p> Winner - 5000/-<BR><BR><p class="font-weight-bold">For details - </p><BR>1. Shumbham Raj<BR>9472166879<BR>2. Aishwarya Rokade</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">CODE A THON</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6><p class="font-weight-bold">CODE A THON</p><p>Code...Compete... Conquer!<br>To all brilliant minds out there here's a challenge you should take! Those who will code fast will survive till last.</p><p class="font-weight-bold">Events will be of 3 rounds</p><p>1. Quizzards<br>2. The Lost Clue<br>3. Code Ciphering</p><p>Participants have to solve the quiz on basic C programming. In second round selected pairs have to collect chits from various places. Each Chit will contain one alphabet and some lines of code they have to collect all those chits forming the particular word. In final round, they have to execute the whole code they formed earlier.</p><p class="font-weight-bold">Location -</p><p> Lab No. 264, 265, 266</p><p class="font-weight-bold">Entry Fees-</p> <p>200/- per pair</p><p class="font-weight-bold">Winning prizes -</p><p>Winner- 6000/-<br>Runner up- 3000/-</p><p class="font-weight-bold">For details -</p>Badal Lokhande<br>7387882303</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">BOT MARATHON</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6><p class="font-weight-bold">BOT MARATHON</p><p class="font-weight-bold">About the event-</p><p>For all the techies and robo lovers out there!<br>Here is something you can't afford to miss!<br>Bot Marathon is an event based on innovation, skills, strategies and implementation.<br> In this event, participants have to drive their bot through out the track created. Each track holds the new challenge. Time given to complete entire track is limited. The bot handler who will complete whole track within the given time limit will be declared as winner.</p><p class="font-weight-bold">Location-</p><p>PO Office Lawn</p><p class="font-weight-bold">Entry Fees-</p><p>500/- per pair<br>300/- per person</p><p class="font-weight-bold">Winning Prizes-</p><p>Winner- 3000/-<br>Runner-up- 1500/-</p><p class="font-weight-bold">For details-</p><p>Mr. Ankush Ratthe<br>7720886267<br>Ms.Dakshata Akre</p></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">ART FEST</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> <p class="font-weight-bold">ART FEST</p><p class="font-weight-bold">About the event-</p>The very human emotions of man towards childhood, had to be boughtenback. In such a way that the outcome, takes him back to the memory lane. In which watching television and life without internet comes to life again.<br>This event is going to be all about television. All the audience visiting and participating in the event, will get his 5 senses excited.<br><p class="font-weight-bold">Location -</p><p>Architecture Lawn</p><p class="font-weight-bold">Entry Fees -</p><p>70/- per person</p><p class="font-weight-bold">Winning Prizes-</p><p>Giveaways</p><p class="font-weight-bold">For details -</p>Vedanti Barvekar<br>7558500561</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">CODE-HARD</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+       <p class="font-weight-bold">CODE-HARD</p><p class="font-weight-bold">About the event-</p>Just because something is difficult doesn't mean you shouldn't try, it just means you should try<br>HARDER.<br> If coding is your passion then you must prove it!<br>Event will be of  two rounds-<br>1. Coding<br>2. Presentation<br>Here 3 or 5 problem statement will be provided to participants, they need to crack the logic for same. Along with this they should present logics used behind the code.<p class="font-weight-bold">Location -</p> CCC Lab<p class="font-weight-bold">Entry Fees-</p>500/- for group of 5
+       <br>300/- for group of 3
+       <p class="font-weight-bold">Winning Prizes-</p>Winner - 5000/-<br>Runner up - 2500/-<br>For details -<br>Mayank Khadotkar      7020862914
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">SPEAKER'S HUB</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6><p class="font-weight-bold">SPEAKER'S HUB</p><p class="font-weight-bold">About the event-</p><p>They say the pen is mightier than the sword, words are stronger than letters, So sharpen your tongue and join the ride, Use your wits to win.<br>Series will consist of two rounds Group Discussion and Interactive Debate.</p><p class="font-weight-bold">Location</p><p>- NDH</p><p class="font-weight-bold">Entry fees</p><p>- 100/-</p><p class="font-weight-bold">Winning prizes-</p><p>Winner - 1500/-</p><p>Runner up - 800/-</p><p class="font-weight-bold">For Details -</p><p>Sushma Rao<br>7542094374</p></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable13" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">TENDER FILLING</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> <p class="font-weight-bold">TENDER FILLING</p><p class="font-weight-bold">About the event-</p><p>Let's prove that we are still a people capable of doing big things and tackling our biggest challenges.<br>Test your biding capabilities, challenge your skills.<br>Go head to head with the best and prove yourself!<br>Participants have to fill and bid the tender for given plan of construction. The relevant documents are required to be submitted in ballot box on time.<p class="font-weight-bold">Location-</p> <p>Room no. 130 A and 130 B</p><p class="font-weight-bold">Entry Fees-</p><p>200/- per pair</p><p class="font-weight-bold">Winning Prizes-</p><p>Winner- 3000/-<br>Runner up- 2000/-<p class="font-weight-bold">For details-</p>Gaurav Thakre<br>8284967472</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable14" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable15" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable16" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable17" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable18" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">CATAPULT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6> catapult is a event in which we can dance like .... djldsdslkcd dsuvdkvdsiuvdsbl vdds uvbs ouidvb uvovorv vrogirhgorihg fogihfoighfohgfd gdfghfo;g dgodf ig fdoighfdog hfdgh foghd foi;gdfioghoi sdfg dfhg sdfogh ;sod ghfdoi ghdf gifd g;oih;ogihdi;o gdhgoifdhghfgo ewrehg;oergregoirehgorgwerghoierhg;oierh</h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollable19" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalScrollableTitle"><p class="font-weight-bold">NOOSE TROUBLE</p></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6><p class="font-weight-bold">NOOSE TROUBLE</p><p class="font-weight-bold">About the event-</p><p>It is not as simple as it looks!
+Noose-Trouble is basically wire loop game having the metal loop that has to be taken from intial point to the final point along the length of wire. As we have  already told it's not that easy. So here is the something that will take it go up to another level, the metal loop should not touch wire at any point. If the metal loop touches the wire then the game will be lost by first player and further it should be continued by another player.<br>You need both pace and patience for this!</p><p class="font-weight-bold">Location-</p><p>Electrical Lawn</p><p class="font-weight-bold">Entry Fees-</p><p>200 /- per pair</p><p class="font-weight-bold">Winning Prizes-</p><p>
+Winner-1500/-<br>Runner up-1000/-</p><p class="font-weight-bold">For details-</p><p>Ms. Shreya Banode<br>9422880974</p></h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

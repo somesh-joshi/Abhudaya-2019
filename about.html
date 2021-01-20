@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      #Portfolio {
+      background-image: url(images/hero-bg.png)
+    }
+
+      #home{
+        height: 87.5%;
+      }
+
+
+    </style>
+
+  </head>
+<body id="Portfolio">
+
+<section class="main-section paddind" id="Portfolio">
+
+
+
+      <div class="header-logo">
+        <!-- <a id="IIITr" href="javascript:void(0)">InfiIIITy</a> -->
+        <img src="images/logo.png" style="height: 10%; width: 10%; margin-top: 15px; ">
+        <a id="inno" href="javascript:void(0)" onclick="function () "></a>
+      </div>
+
+      
+      <a id="header-menu-trigger" href="#0">
+        <span class="header-menu-text" style="color: white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;margin-top: -0.16em">Menu</span>
+        <span class="fa fa-bars" id="bars" style="font-size: 1.5em;color:white;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"></span>
+      </a>
+
+      <nav id="menu-nav-wrap">
+        <a href="#0" class="close-button" title="close">
+          <span>Close</span>
+        </a>
+
+        <h3>ABHYUDAYAA 2020</h3>
+
+        <ul class="nav-list">
+          <li class="current">
+            <a style="text-decoration: none;color:white" href="./index.html" title="">Home</a>
+          </li>
+          
+          <li>
+            <a style="text-decoration: none;" href="./about.html" title="">About</a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="./event.html" title="">Events</a>
+          </li>
+
+          <li>
+            <a style="text-decoration: none;" href="./committees.html" title="">Committees</a>
+          </li>
+
+          <li class="ca">
+            <a style="text-decoration: none;" href="./sponsors.html" title="">Sponsors</a>
+          </li>
+          <li>
+            <a style="text-decoration: none;" href="./contact.html">Contact Us</a>
+          </li>
+          <li>
+                        <a class="glow1" style="text-decoration: none;" href="./tshirt.html" title="">T-SHIRT</a>
+                    </li>
+
+        </ul>
+        <script>
+          $(document).ready(function () {
+            if (localStorage.token == "" || localStorage.token == null || !(localStorage.token)) {
+              $(".signed_out").css("display", "block");
+              $(".signout").css("display", "none");
+              $(".profile").css("display","none");
+              $(".ca").css("display", "block");
+            } else {
+              $(".signout").css("display", "block");
+              $(".signed_out").css("display", "none");
+              $(".profile").css("display","block");
+              $(".ca").css("display", "none");
+            }
+
+          });
+        </script>
+        <script>
+          $(document).on("click",".signout",function(){
+            localStorage.removeItem('token');
+            localStorage.removeItem('innoID');
+            location.href='./index.html';
+          });
+        </script>
+        
+
+      </nav>
+      
+
+    
+      
+    <!--main-section-start-->
+    <div>
+    <center><h1 style="color: white;">ABOUT US</h1></center><br>
+       <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                       <h4 style="color: white;">Who We Are</h4>
+                        <h2 style="color: white;">Welcome to Geophysical Services Incorporated </h2>
+                        <p class="lead">Geophysical Services Incorporated, an ISO 9001-2015 company, is recognized as a developer in applied near-surface geophysics in India, providing Constricting and Consulting services to consumers from the Geotechnical, Civil Engineering, Mineral, Hydrological and Environmental trades. The company retains the largest variety of near-surface geophysical survey apparatus in Indian private sector and continues to develop its resources to advance their geophysical survey ability.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                        <img src="images\kits.jpg" alt="" class="img-responsive img-rounded">
+                        
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr1">  
+
+             <div class="row">
+        <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                        <img src="images\logo.png" alt="" class="img-responsive img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+        
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h4 style="color: white;">ABOUT OUR EVENT</h4>
+                        <h2 style="color: white;">We Are Geophysical Services Incorporated</h2>
+                        <p class="lead">What encourages our specialists is the idea of provided that all of our clients with the broadest range of solutions modified to their needs in order to deliver the best data accessible in today's market.</p>
+                         <p class="lead">It’s an established statement that a single geophysical technique can’t provide a sole solution to subsurface problems. Geophysical Services Incorporated has a wide range of geophysical tools at its removal, and vast experience to propose its clients the right combination of tools to be used to address to subsurface investigation trials. Geophysical Services Incorporated strives to use technology for providing unique solution.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section --> 
+      
+
+    
+    </div>
+   
+  
+  
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/wow (2).js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/magnific-popup.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+
+
+      var $container = $('.portfolioContainer'),
+        $body = $('body'),
+        colW = 375,
+        columns = null;
+
+
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+
+      $(window).smartresize(function() {
+        // check if columns has changed
+        var currentColumns = Math.floor(($body.width() - 30) / colW);
+        if (currentColumns !== columns) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width(columns * colW)
+            .isotope('reLayout');
+        }
+
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function() {
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+
+          filter: selector,
+        });
+        return false;
+      });
+
+    });
+  </script>
+
+
+
+
+
+  </body>
+</html>
